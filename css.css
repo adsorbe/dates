@@ -1,0 +1,51 @@
+
+body{
+    background-color: grey;
+}
+
+#left{
+    background-color: cadetblue;
+    max-width: 300px;
+    max-height: 600px;
+}
+#birthdays{
+    background-color:white;
+    
+    width: 400px;
+    height: 600px;
+
+}
+#date_tommorow{
+    margin: 2%;
+    border: 1px solid black;
+    width:360px;
+    height: 50px;
+
+}
+#main_screen_logo{
+    padding: 5px;
+    width: 380px;
+    height: 80px;
+    color:rgb(54, 74, 105) ;
+}
+#date_today{
+    margin: 2%;
+    border: 1px solid black;
+    width:360px;
+    height: 50px;
+
+}
+#date_yesterday{
+    margin: 2%;
+    border: 1px solid black;
+    width:360px;
+    height: 50px;
+
+}
+#weather{
+    margin: 2%;
+    border: 1px solid black;
+    width:360px;
+    height: 50px;
+
+}
