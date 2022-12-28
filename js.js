@@ -40,7 +40,6 @@ let  date_counter = function(current_day, current_month){
 }
 
 // база дат
-
 let dates_base = {
           "Коля Удодов" : "11.06",
          "Саша Сафонов" : "06.01",
@@ -73,31 +72,24 @@ let dates_base = {
   "Наталья Верещагина"  : "20.09",
       "Саша племянник"  : "20.11",
       "Леша племянник"  : "23.11",
-        "Леша свадьба"  : "23.11",
-                "Mike"  : "28.02"
-
-
-}
-
+"Саша племянник свадьба"  : "23.11",
+        "Леша свадьба"  : "26.11",
+                "Mike"  : "28.02",
+   "Андрей Грибовский"  :  "19.12",
+        "Айя Калатало"  :  "11.12",
+          "Mulderzhan"  :  "21.02"
+};
 let list_of_dates = date_counter(current_day, current_month); // массив строковых значений дат
 
 // функция поиска памятных дат 
-
-
 let celebration_finder = function(tag_date, dates_base){
     let temp_result ='';
-
-    for (let key in dates_base){
-                   
+    for (let key in dates_base){         
         if(tag_date == dates_base[key]){
-            
             temp_result = temp_result + ", " +  key;
-            
         }
         else{
-            
         }
-        
     }
       
     return temp_result
