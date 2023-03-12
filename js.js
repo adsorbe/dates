@@ -76,7 +76,8 @@ let dates_base = {
              "Медведь"  :  "06.02",
           "Толя Шатун"  :  "14.02",
            "Дана Леша"  :  "14.02",
-     "Vladislav Radko"  :  "19.02"
+     "Vladislav Radko"  :  "19.02",
+               "Wadd1"  :  "10.03"
 
 };
 let list_of_dates = date_counter(current_day, current_month); // массив строковых значений дат
