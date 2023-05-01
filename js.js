@@ -78,8 +78,8 @@ let dates_base = {
            "Дана Леша"  :  "14.02",
      "Vladislav Radko"  :  "19.02",
                "Wadd1"  :  "10.03"
-
 };
+
 let list_of_dates = date_counter(current_day, current_month); // массив строковых значений дат
 
 // функция поиска памятных дат 
@@ -98,15 +98,17 @@ let celebration_finder = function(tag_date, dates_base){
 // присваивание данных в текст страницы
 let date_today =  celebration_finder(list_of_dates[1], dates_base); // вызов функции поиска памятных даты сегодня
 
+
 // присваивание данных в текст страницы
 if (date_today != ""){
     document.getElementById("date_today").textContent = list_of_dates[1] + " " + date_today.slice(1,length.date_today);
-    document.getElementById("date_today").style.backgroundColor = "Cyan";
-        
+    document.getElementById("date_today").style.backgroundColor = "Cyan";      
 }
 else{
     document.getElementById("date_today").textContent = "сегодня дней рождений нет";  
 }
+
+
 let day_yesterday =  celebration_finder(list_of_dates[0], dates_base); // вызов функции поиска даты вчера
 if (day_yesterday != ""){
     document.getElementById("date_yesterday").textContent = list_of_dates[0] + " " + day_yesterday.slice(1,length.day_yesterday);
@@ -115,6 +117,8 @@ if (day_yesterday != ""){
 else{
     document.getElementById("date_yesterday").textContent = "вчера дней рождений не было";  
 }
+
+
 let day_tommorow =  celebration_finder(list_of_dates[2], dates_base); // вызов функции поиска даты завтра
 if (day_tommorow != ""){
     document.getElementById("date_tommorow").textContent = list_of_dates[2] + " " + day_tommorow.slice(1,length.day_tommorow); 
@@ -123,6 +127,7 @@ if (day_tommorow != ""){
 else{
     document.getElementById("date_tommorow").textContent = "завтра дней рождений нет";  
 }
+
 
 //  weather
 let requesURL =  "https://api.openweathermap.org/data/2.5/weather?q=gomel&units=metric&appid=18bb4a0ebc152dd39fdeb42759651e19";
@@ -134,6 +139,7 @@ let requesURL =  "https://api.openweathermap.org/data/2.5/weather?q=gomel&units=
         let result = request.response;
         console.log(result);
         let show_weather = Math.round(result.main.temp);
+        
         if (show_weather > 0){
             document.getElementById("weather").textContent = `температура +${show_weather}`;
         }
@@ -143,6 +149,8 @@ let requesURL =  "https://api.openweathermap.org/data/2.5/weather?q=gomel&units=
         else{
             document.getElementById("weather").textContent = `температура около 0 градусов`;
         }
+
+
         let weather_humidity = result.main.humidity;
         console.log(weather_humidity);
         document.getElementById("hUmidity").textContent = `влажность  ${weather_humidity} процентов`;
