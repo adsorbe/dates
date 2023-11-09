@@ -45,6 +45,9 @@ let dates_base = {
 "Vladislav Radko"  :  "19.02",
          "Wadd1"  :  "10.03",
 "Артем Задорожный"  :  "01.07",
-    "Undershaft"  :  "30.09",
-"Electromuxomor"  :  "04:04"
+    "Undershaft"  :  "30.08",
+"Electromuxomor"  :  "04.04",
+"свадьба Виталиков": "27.10",
+"Василий Тикленков"  :  "25.10",
+"Chemba"  : "05.10"
 };
