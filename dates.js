@@ -1,5 +1,6 @@
 // база дат
 let dates_base = {
+   "Маша Froilin" : "21.07",
      "Эрик Vitaj" : "15.02",
       "Roy Batty" : "19.04",
      "Женя Vitaj" : "26.05",
