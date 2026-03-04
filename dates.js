@@ -1,5 +1,6 @@
 // база дат
 let dates_base = {
+     "its a test" : "05.03",
   "Tihonovetskij" : "04.04",
            "Lars" : "15.01",
    "Маша Froilin" : "21.07",
